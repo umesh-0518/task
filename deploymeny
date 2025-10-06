@@ -12,5 +12,6 @@ install nginx
 
         ssl_certificate /etc/nginx/default.d/nginx.crt;
         ssl_certificate_key /etc/nginx/default.d/selfsigned.key;
+      add inbound rule 443 ..
 
   
