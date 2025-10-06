@@ -1,0 +1,16 @@
+install nginx
+  systemctl start/stop/reload
+  nginx conf-/etc/nginx/nginx.conf
+  in dns setting, create a Arecord and point to public ip 
+  in nginx.conf add- server_name ...
+  #Https setup 
+  sudo yum install certbot python3-certbot-nginx -y
+  sudo certbot certonly --standalone -d domain.com
+  #add nginx.conf
+   listen 443 ssl;
+        server_name ;
+
+        ssl_certificate /etc/nginx/default.d/nginx.crt;
+        ssl_certificate_key /etc/nginx/default.d/selfsigned.key;
+
+  
